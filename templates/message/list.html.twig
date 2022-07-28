@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+{% block title %} List message {% endblock %}
+
+{% block body %}
+    {% for message in messages %}
+        <p> {{ message.id }} </p>
+        <p>Topic: {{ message.topic }} </p>
+        <p>Text: {{ message.text }} </p>
+    {% endfor %}
+{% endblock %}
